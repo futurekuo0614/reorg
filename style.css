@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+#subtitleDisplay {
+  background: #000;
+  color: #0f0;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
