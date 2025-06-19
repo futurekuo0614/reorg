@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>日文會議即時翻譯</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Teams 日文即時字幕翻譯</h1>
+  <div id="subtitleDisplay"></div>
+  <button onclick="start()">開始翻譯</button>
+  <button onclick="exportSRT()">下載 SRT</button>
+  <button onclick="exportTXT()">下載 TXT</button>
+  <script type="module">
+    import { getAudioStreamAndProcess } from './audio_processor.js';
+    import { saveSRT, saveSRTasTXT } from './srt_exporter.js';
+    window.start = getAudioStreamAndProcess;
+    window.exportSRT = saveSRT;
+    window.exportTXT = saveSRTasTXT;
+  </script>
+</body>
+</html>
